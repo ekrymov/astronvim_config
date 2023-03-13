@@ -2,7 +2,7 @@ return {
   -- Configure AstroNvim updates
   updater = {
     remote = "nightly", -- remote to use
-    channel = "nightly", -- "stable" or "nightly"
+    channel = "stable", -- "stable" or "nightly"
     version = "latest", -- "latest", tag name, or regex search like "v1.*" to only do updates before v2 (STABLE ONLY)
     branch = "nightly", -- branch name (NIGHTLY ONLY)
     commit = nil, -- commit hash (NIGHTLY ONLY)
@@ -12,13 +12,14 @@ return {
     auto_quit = false, -- automatically quit the current session after a successful update
     remotes = { -- easily add new remotes to track
       --   ["remote_name"] = "https://remote_url.come/repo.git", -- full remote url
-      --   ["remote2"] = "github_user/repo", -- GitHub user/repo shortcut,
+        ["user_config"] = "ekrymov/astronvim_config", -- GitHub user/repo shortcut,
       --   ["remote3"] = "github_user", -- GitHub user assume AstroNvim fork
     },
   },
 
   -- Set colorscheme to use
   -- colorscheme = "astrodark",
+  -- colorscheme = "tokyonight-night",
   colorscheme = "catppuccin",
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
