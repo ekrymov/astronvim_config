@@ -1,6 +1,32 @@
 return {
   "nvim-treesitter/nvim-treesitter",
   opts = {
-    ensure_installed = { "go", "lua" },
+    auto_install = true;
+    ensure_installed = {
+      "bash",
+      "c",
+      "cpp",
+      "css",
+      "dockerfile",
+      "go",
+      "gomod",
+      "gowork",
+      "help",
+      "html",
+      "javascript",
+      "json",
+      "latex",
+      "lua",
+      "markdown",
+      "markdown_inline",
+      "python",
+      "regex",
+      "rust",
+      "scss",
+      "toml",
+      "typescript",
+      "vue",
+      "yaml",
+    },
   },
 }
