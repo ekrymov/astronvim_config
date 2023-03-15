@@ -31,6 +31,16 @@ return {
       end,
       desc = "Close buffer",
     },
+    ["<leader>C"] = {
+      function()
+        local bufs = vim.fn.getbufinfo { buflisted = true }
+        require("astronvim.utils.buffer").close(0, true)
+        if require("astronvim.utils").is_available "alpha-nvim" and not bufs[2] then
+          require("alpha").start(true)
+        end
+      end,
+      desc = "Force close buffer",
+    },
   },
   t = {
     -- setting a mapping to false will disable it
