@@ -53,6 +53,10 @@ return {
     servers = {
       -- "pyright"
     },
+    -- set offset encoding
+    capabilities = {
+      offsetEncoding = "utf-8",
+    },
   },
 
   -- Configure require("lazy").setup() options
@@ -82,8 +86,5 @@ return {
     --     ["~/%.config/foo/.*"] = "fooscript",
     --   },
     -- }
-    -- Set offset encoding
-    local capabilities = require("astronvim.utils.lsp").capabilities
-    capabilities.offsetEncoding = "utf-8"
   end,
 }
