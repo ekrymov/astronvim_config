@@ -1,0 +1,5 @@
+# Selene linter config file
+# https://kampfkarren.github.io/selene/usage/configuration.html
+
+std = "lua52+vim"
+
