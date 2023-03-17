@@ -53,9 +53,11 @@ return {
     servers = {
       -- "pyright"
     },
-    -- set offset encoding
-    capabilities = {
-      offsetEncoding = "utf-8",
+    -- lsp servers config
+    config = {
+      clangd = {
+        capabilities = { offsetEncoding = "utf-8" },
+      },
     },
   },
 
