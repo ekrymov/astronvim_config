@@ -67,9 +67,14 @@ return {
     performance = {
       rtp = {
         -- customize default disabled vim plugins
-        disabled_plugins = { "tohtml", "gzip", "matchit", "zipPlugin", "netrwPlugin", "tarPlugin", "matchparen" },
+        disabled_plugins = { "tohtml", "gzip", "matchit", "zipPlugin", "netrwPlugin", "tarPlugin" },
       },
     },
+    checker = {
+      enabled = true,
+      concurrency = 1,
+    },
+    debug = false,
   },
 
   -- This function is run last and is a good place to configuring
