@@ -69,6 +69,17 @@ return {
   --     }, { mode = "n", prefix = "<leader>" })
   --   end,
   -- },
+  -- Move prompt position bottom
+  {
+    "nvim-telescope/telescope.nvim",
+    opts = function(_, opts)
+      opts.defaults.layout_config.horizontal = {
+        prompt_position = "bottom",
+        preview_width = 0.6,
+      }
+      return opts
+    end
+  },
   -- Adds the mode text to the statusline
   {
     "rebelot/heirline.nvim",
