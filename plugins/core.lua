@@ -77,6 +77,13 @@ return {
         prompt_position = "bottom",
         preview_width = 0.6,
       }
+      opts.defaults.file_ignore_patterns = {
+        "node_modules",
+        -- "%.ico$",
+        -- "%.png$",
+        -- "%.jpg$",
+        -- "%.gz$",
+      }
       return opts
     end
   },
