@@ -4,6 +4,7 @@ return {
     -- set to true or false etc.
     relativenumber = false, -- sets vim.opt.relativenumber
     number = true, -- sets vim.opt.number
+    scrolloff = 5, -- sets vim.opt.scrolloff
     spell = false, -- sets vim.opt.spell
     signcolumn = "yes", -- sets vim.opt.signcolumn to auto
     wrap = false, -- sets vim.opt.wrap
