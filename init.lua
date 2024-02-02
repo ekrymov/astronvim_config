@@ -58,6 +58,16 @@ return {
       clangd = {
         capabilities = { offsetEncoding = "utf-8" },
       },
+      pylsp = {
+        settings = {
+          pylsp = {
+            plugins = {
+              pycodestyle = { maxLineLength = 90 },
+              -- pylint = { enabled = true },
+            },
+          },
+        },
+      },
     },
   },
 
